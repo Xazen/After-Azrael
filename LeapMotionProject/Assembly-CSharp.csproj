@@ -103,8 +103,10 @@
      <Compile Include="Assets\LeapMotion\Scripts\Utils\StretchToScreen.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\Utils\TriggerDrawing.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\Utils\Utils.cs" />
+     <Compile Include="Assets\LeapMotionShooter\Scripts\Asteroid.cs" />
      <Compile Include="Assets\LeapMotionShooter\Scripts\constantMovement.cs" />
      <Compile Include="Assets\LeapMotionShooter\Scripts\movement.cs" />
+     <Compile Include="Assets\PositionTracker.cs" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\LeapMotion\InteractionUtils (alpha)\readme.txt" />
      <None Include="Assets\LeapMotion\readme.txt" />
@@ -115,7 +117,7 @@
      <None Include="Assets\LeapMotion\Shaders\LeapDistorted.shader" />
      <None Include="Assets\LeapMotion\Shaders\LeapUndistorted.shader" />
  <Reference Include="LeapCSharp.NET3.5">
- <HintPath>/Users/Xazen/Projects/Eigene/BerlinMiniJam/Code/LeapMotionProject/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
+ <HintPath>/Users/vikpek/Dropbox/UnityProjects/BerlinJam/LeapMotionProject/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
