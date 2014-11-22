@@ -7,7 +7,11 @@ public class AstroidCollision : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		playerCollision = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerCollision>();
+		GameObject player = GameObject.FindGameObjectWithTag ("Player");
+		if (player) 
+		{
+			playerCollision = player.GetComponent<PlayerCollision> ();
+		}
 	}
 	
 	// Update is called once per frame
