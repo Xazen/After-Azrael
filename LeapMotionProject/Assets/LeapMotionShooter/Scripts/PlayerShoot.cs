@@ -38,7 +38,6 @@ public class PlayerShoot : MonoBehaviour {
 
 
 	public void StartShooting() {
-		Debug.Log("Shoting not implemented!");
 		this.isShooting = true;
 	}
 
@@ -51,6 +50,6 @@ public class PlayerShoot : MonoBehaviour {
 		GameObject projectile = (GameObject) Object.Instantiate(this.projectilePrefab, this._transform.position, Quaternion.identity);
 
 		BulletMovement movement = projectile.GetComponent<BulletMovement>();
-		movement.Fire(new Vector3(0,0,1), new Vector3(0,0,20));
+		movement.Fire(new Vector3(0,0,1), new Vector3(0,0,30));
 	}
 }
