@@ -22,6 +22,9 @@ public class PlayerShoot : MonoBehaviour {
 		if(Input.GetButtonDown("Fire1")) {
 			this.StartShooting();
 		}
+		if(Input.GetButtonUp("Fire1")) {
+			this.StopShooting();
+		}
 
 		if(this.isShooting) {
 			if(Time.time >= this.lastShoot + this.shootDelay) {
@@ -46,6 +49,6 @@ public class PlayerShoot : MonoBehaviour {
 		GameObject projectile = (GameObject) Object.Instantiate(this.projectilePrefab);
 
 		BulletMovement movement = projectile.GetComponent<BulletMovement>();
-		movement.Fire(Vector3.zero, new Vector3(0,0,20));
+		movement.Fire(new Vector3(0,0,1), new Vector3(0,0,20));
 	}
 }
