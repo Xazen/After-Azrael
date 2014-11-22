@@ -12,7 +12,7 @@ public class PlayerShoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetButtonDown("Fir1e")) {
+		if(Input.GetButtonDown("Fire1")) {
 			this.StartShooting();
 		}
 	}

@@ -30,3 +30,6 @@ LeapMotionProject/Assembly-CSharp.csproj
 LeapMotionProject/LeapMotionProject.sln
 LeapMotionProject/LeapMotionProject-csharp.sln
 *.userprefs
+*.csproj
+*.sln
+*.userprefs
