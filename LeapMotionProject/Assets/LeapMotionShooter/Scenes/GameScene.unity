@@ -1703,7 +1703,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff87da2a952cb4ecea252d90ffb1030a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 100
+  hitPoints: 10
+  deathSound: {fileID: 8300000, guid: 55cfda69db9a91e4997edad789f8b66b, type: 3}
+  takeDamage: {fileID: 8300000, guid: 554b752a53e0e494e81c710e76b958c7, type: 3}
 --- !u!114 &1306126995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1899,6 +1901,10 @@ Prefab:
       propertyPath: spawnManager
       value: 
       objectReference: {fileID: 1933315071}
+    - target: {fileID: 11400018, guid: 2386c33d98d4f4cf9b36a089a40a909c, type: 2}
+      propertyPath: hitPoints
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2386c33d98d4f4cf9b36a089a40a909c, type: 2}
   m_RootGameObject: {fileID: 87961668}
@@ -2893,8 +2899,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   astroid: {fileID: 100000, guid: 1bb4651b590d5d94ab975f69775cb832, type: 2}
   astroidSpawnDistance: 50
-  spawnRangeX: 10
-  spawnRangeY: 10
+  spawnRangeX: 0
+  spawnRangeY: 0
 --- !u!4 &1933315072
 Transform:
   m_ObjectHideFlags: 0
@@ -2916,6 +2922,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1936539901}
   - 114: {fileID: 1936539903}
+  - 114: {fileID: 1936539904}
   - 114: {fileID: 1936539902}
   m_Layer: 8
   m_Name: FakeHand
@@ -2977,6 +2984,20 @@ MonoBehaviour:
   waitFrames: 10
   embeddedReplacementImage: {fileID: 0}
   onColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1936539904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400012, guid: 1b0024bd3320b443ab8e64296cf52a54,
+    type: 2}
+  m_PrefabInternal: {fileID: 1415575682}
+  m_GameObject: {fileID: 1936539900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4bd22ff00a146b69f25d6e8ed71a9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceSpringConstant: 100
+  magnetDistance: 2
 --- !u!1 &1983196643
 GameObject:
   m_ObjectHideFlags: 0

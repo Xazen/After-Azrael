@@ -28,18 +28,18 @@ public class PlayerHealth : MonoBehaviour {
 	public void damaged(int damage)
 	{
 		hitPoints -= damage;
-		if(this.takeDamage != null && this.audio != null) {
-			this.audio.PlayOneShot(this.takeDamage);
-		}
+//		if(this.takeDamage != null) {
+//
+//		}
+		this.audio.PlayOneShot(this.takeDamage);
 
 		if (hitPoints <= 0) 
 		{
-			if(this.deathSound != null && this.audio != null) {
-				this.audio.PlayOneShot(this.deathSound);
-			}
-
+			this.audio.PlayOneShot(this.deathSound);
+//			if(this.deathSound != null) {
+//
+//			}
 			Object.Destroy(player);
-
 		}
 	}
 }

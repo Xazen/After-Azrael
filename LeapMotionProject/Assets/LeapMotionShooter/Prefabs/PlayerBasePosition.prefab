@@ -796,6 +796,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+  deathSound: {fileID: 8300000, guid: 55cfda69db9a91e4997edad789f8b66b, type: 3}
+  takeDamage: {fileID: 8300000, guid: 554b752a53e0e494e81c710e76b958c7, type: 3}
 --- !u!114 &11400020
 MonoBehaviour:
   m_ObjectHideFlags: 1
