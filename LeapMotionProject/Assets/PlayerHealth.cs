@@ -3,6 +3,9 @@ using System.Collections;
 
 public class PlayerHealth : MonoBehaviour {
 
+
+	private int hitPoints = 100;
+
 	// Use this for initialization
 	void Start () {
 	
