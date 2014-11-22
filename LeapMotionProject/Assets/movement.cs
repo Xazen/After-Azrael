@@ -3,7 +3,8 @@ using System.Collections;
 
 public class movement : MonoBehaviour {
 
-	public float movementSpeed = 5;
+	[SerializeField]	
+	private float movementSpeed = 5;
 
 	private Transform _transform;
 
@@ -16,7 +17,7 @@ public class movement : MonoBehaviour {
 	void Update () {
 		Vector3 input = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
 
-		_transform.position += input * Time.deltaTime * movementSpeed;
+		_transform.localPosition += input * Time.deltaTime * movementSpeed;
 	}
 
 
