@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class movement : MonoBehaviour {
+public class Movement : MonoBehaviour {
 
 	[SerializeField]	
 	private float movementSpeed = 5;
