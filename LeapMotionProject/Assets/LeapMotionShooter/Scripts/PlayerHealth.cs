@@ -39,6 +39,8 @@ public class PlayerHealth : MonoBehaviour {
 //			if(this.deathSound != null) {
 //
 //			}
+
+
 			Object.Destroy(player);
 		}
 	}
