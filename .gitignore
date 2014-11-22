@@ -18,3 +18,8 @@
 sysinfo.txt
 *.csproj
 *.csproj
+LeapMotionProject/Assembly-CSharp-Editor-vs.csproj
+LeapMotionProject/Assembly-CSharp-Editor-vs.csproj
+*.sln
+LeapMotionProject/LeapMotionProject-csharp.sln
+LeapMotionProject/LeapMotionProject.sln
