@@ -617,6 +617,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   - 114: {fileID: 11400010}
+  - 114: {fileID: 11400012}
   m_Layer: 8
   m_Name: FakeHand
   m_TagString: Untagged
@@ -1703,6 +1704,19 @@ MonoBehaviour:
   waitFrames: 10
   embeddedReplacementImage: {fileID: 0}
   onColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4bd22ff00a146b69f25d6e8ed71a9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceSpringConstant: 100
+  magnetDistance: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

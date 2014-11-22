@@ -5,8 +5,15 @@ public class PlayerHealth : MonoBehaviour {
 
 	[SerializeField]
 	private int hitPoints = 100;
+	
+	[SerializeField]
+	private AudioClip deathSound;
+
+	[SerializeField]
+	private AudioClip takeDamage;
 
 	private GameObject player;
+
 
 	// Use this for initialization
 	void Start () {
@@ -21,9 +28,18 @@ public class PlayerHealth : MonoBehaviour {
 	public void damaged(int damage)
 	{
 		hitPoints -= damage;
+		if(this.takeDamage != null && this.audio != null) {
+			this.audio.PlayOneShot(this.takeDamage);
+		}
+
 		if (hitPoints <= 0) 
 		{
+			if(this.deathSound != null && this.audio != null) {
+				this.audio.PlayOneShot(this.deathSound);
+			}
+
 			Object.Destroy(player);
+
 		}
 	}
 }
