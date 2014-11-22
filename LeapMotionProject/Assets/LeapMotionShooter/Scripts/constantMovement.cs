@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class constantMovement : MonoBehaviour {
+public class ConstantMovement : MonoBehaviour {
 
 	[SerializeField]
 	private float movementSpeed = 5;
@@ -32,7 +32,7 @@ public class constantMovement : MonoBehaviour {
 
 			if (spawnManager != null)
 			{
-				spawnManager.spawnAstroid(new Vector3(0,0,50) + this.transform.localPosition);
+				spawnManager.spawnAstroid(this.transform.localPosition);
 			}
 		}
 	}
