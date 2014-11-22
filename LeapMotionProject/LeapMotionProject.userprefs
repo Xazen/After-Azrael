@@ -1,22 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/LeapMotionShooter/Scripts/PlayerShoot.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/LeapMotionShooter/Scripts/ConstantMovement.cs">
     <Files>
-      <File FileName="Assets/PinchShot.cs" Line="46" Column="28" />
-      <File FileName="Assets/PositionTracker.cs" Line="1" Column="1" />
-      <File FileName="Assets/LeapMotion/Scripts/HandController.cs" Line="1" Column="1" />
+      <File FileName="Assets/LeapMotionShooter/Scripts/AstroidCollision.cs" Line="24" Column="1" />
+      <File FileName="Assets/LeapMotionShooter/Scripts/PlayerHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets/LeapMotionShooter/Scripts/PlayerCollision.cs" Line="1" Column="1" />
       <File FileName="Assets/LeapMotionShooter/Scripts/PlayerShoot.cs" Line="1" Column="1" />
-      <File FileName="Assets/LeapMotion/Scripts/Utils/GrabbingHand.cs" Line="1" Column="1" />
-      <File FileName="Assets/LeapMotion/Scripts/Hands/HandModel.cs" Line="1" Column="1" />
-      <File FileName="../../../../Library/Containers/it.bloop.airmail/Data/Library/Application Support/Airmail/General/Tmp/trunkToHand.cs" Line="1" Column="1" />
       <File FileName="Assets/LeapMotionShooter/Scripts/SpawnManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/LeapMotionShooter/Scripts/constantMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/LeapMotionShooter/Scripts/ConstantMovement.cs" Line="14" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/vikpek/Dropbox/UnityProjects/BerlinJam/LeapMotionProject/Assets/PositionTracker.cs" line="63" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
