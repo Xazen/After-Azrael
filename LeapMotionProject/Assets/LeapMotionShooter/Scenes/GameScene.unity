@@ -2916,6 +2916,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1936539901}
   - 114: {fileID: 1936539903}
+  - 114: {fileID: 1936539902}
   m_Layer: 8
   m_Name: FakeHand
   m_TagString: Untagged
@@ -2941,6 +2942,19 @@ Transform:
   - {fileID: 1318641760}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1936539902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1936539900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4bd22ff00a146b69f25d6e8ed71a9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceSpringConstant: 100
+  magnetDistance: 2
 --- !u!114 &1936539903
 MonoBehaviour:
   m_ObjectHideFlags: 0
