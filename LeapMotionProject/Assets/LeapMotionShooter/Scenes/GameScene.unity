@@ -1727,7 +1727,7 @@ AudioSource:
   m_GameObject: {fileID: 1306126986}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 6f60f8b03811b80489006ab6d104823d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 96742fd77420c3c43895585f64b9cf3b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1905,6 +1905,10 @@ Prefab:
       propertyPath: hitPoints
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 2386c33d98d4f4cf9b36a089a40a909c, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 96742fd77420c3c43895585f64b9cf3b, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2386c33d98d4f4cf9b36a089a40a909c, type: 2}
   m_RootGameObject: {fileID: 87961668}
@@ -2899,8 +2903,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   astroid: {fileID: 100000, guid: 1bb4651b590d5d94ab975f69775cb832, type: 2}
   astroidSpawnDistance: 50
-  spawnRangeX: 0
-  spawnRangeY: 0
+  spawnRangeX: 5
+  spawnRangeY: 6
 --- !u!4 &1933315072
 Transform:
   m_ObjectHideFlags: 0
