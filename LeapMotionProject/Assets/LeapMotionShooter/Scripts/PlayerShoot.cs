@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerShoot : MonoBehaviour {
@@ -13,6 +13,9 @@ public class PlayerShoot : MonoBehaviour {
 	[SerializeField]
 	private float shootDelay = 0.5f;
 	private float lastShoot = -1;
+
+	[SerializeField]
+	private AudioClip shootSound;
 
 	// Use this for initialization
 	void Start () {
@@ -51,5 +54,9 @@ public class PlayerShoot : MonoBehaviour {
 
 		BulletMovement movement = projectile.GetComponent<BulletMovement>();
 		movement.Fire(new Vector3(0,0,1), new Vector3(0,0,30));
+
+		if(this.shootSound != null && this.audio != null) {
+			this.audio.PlayOneShot(this.shootSound);
+		}
 	}
 }
