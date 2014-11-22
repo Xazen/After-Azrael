@@ -6,17 +6,15 @@ public class SpawnManager : MonoBehaviour {
 	[SerializeField]
 	private GameObject astroid;
 	[SerializeField]
-	private float minX = -10;
+	private float astroidSpawnDistance = 50;
 	[SerializeField]
-	private float maxX = 10;
+	private float spawnRangeX = -25;
 	[SerializeField]
-	private float minY = -10;
-	[SerializeField]
-	private float maxY = 10;
+	private float spawnRangeY = 25;
 
 	// Use this for initialization
 	void Start () {
-	
+		
 	}
 	
 	// Update is called once per frame
@@ -26,9 +24,9 @@ public class SpawnManager : MonoBehaviour {
 
 	public void spawnAstroid(Vector3 playerPosition)
 	{
-		GameObject astroid = GameObject.CreatePrimitive (PrimitiveType.Sphere);
-		Vector3 randomPositon = new Vector3 (Random.Range(minX, maxX), Random.Range(minY, maxY), 100);
+		GameObject spawningAstroid = (GameObject)GameObject.Instantiate(astroid);
+		Vector3 randomPositon = new Vector3 (Random.Range(-spawnRangeX, spawnRangeX), Random.Range(-spawnRangeY, spawnRangeY), astroidSpawnDistance);
 		Vector3 spawnPosition = playerPosition + randomPositon;
-		astroid.transform.position = spawnPosition;
+		spawningAstroid.transform.position = spawnPosition;
 	}
 }
