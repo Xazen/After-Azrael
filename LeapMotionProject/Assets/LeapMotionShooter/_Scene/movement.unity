@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8487b0410577c49f886e5cd6b1f3e0b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 5
+  movementSpeed: 30
   spawnDistance: 20
   spawnManager: {fileID: 1933315071}
 --- !u!1 &1306126986
@@ -265,6 +265,14 @@ Prefab:
       propertyPath: spawnManager
       value: 
       objectReference: {fileID: 1933315071}
+    - target: {fileID: 11400002, guid: 2386c33d98d4f4cf9b36a089a40a909c, type: 2}
+      propertyPath: movementSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 2386c33d98d4f4cf9b36a089a40a909c, type: 2}
+      propertyPath: field of view
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2386c33d98d4f4cf9b36a089a40a909c, type: 2}
   m_RootGameObject: {fileID: 87961668}
@@ -385,7 +393,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d8abd73665a4039afa0a8c561797d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  astroid: {fileID: 0}
+  astroid: {fileID: 100000, guid: 1bb4651b590d5d94ab975f69775cb832, type: 2}
+  astroidSpawnDistance: 50
+  spawnRangeX: 25
+  spawnRangeY: 25
 --- !u!4 &1933315072
 Transform:
   m_ObjectHideFlags: 0
