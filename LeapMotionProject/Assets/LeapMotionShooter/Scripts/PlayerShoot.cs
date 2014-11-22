@@ -3,18 +3,20 @@ using System.Collections;
 
 public class PlayerShoot : MonoBehaviour {
 
+	private Transform _transform;
+
 	private bool isShooting;
 
 	[SerializeField]
 	private GameObject projectilePrefab;
 
 	[SerializeField]
-	private float shootDelay;
+	private float shootDelay = 0.5f;
 	private float lastShoot = -1;
 
 	// Use this for initialization
 	void Start () {
-	
+		this._transform = this.transform;
 	}
 	
 	// Update is called once per frame
@@ -46,7 +48,7 @@ public class PlayerShoot : MonoBehaviour {
 
 
 	private void Shoot() {
-		GameObject projectile = (GameObject) Object.Instantiate(this.projectilePrefab);
+		GameObject projectile = (GameObject) Object.Instantiate(this.projectilePrefab, this._transform.position, Quaternion.identity);
 
 		BulletMovement movement = projectile.GetComponent<BulletMovement>();
 		movement.Fire(new Vector3(0,0,1), new Vector3(0,0,20));
