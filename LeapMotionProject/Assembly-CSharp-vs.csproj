@@ -105,6 +105,7 @@
      <Compile Include="Assets\LeapMotion\Scripts\Utils\TriggerDrawing.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\Utils\Utils.cs" />
      <Compile Include="Assets\LeapMotionShooter\Scripts\Asteroid.cs" />
+     <Compile Include="Assets\LeapMotionShooter\Scripts\BulletMovement.cs" />
      <Compile Include="Assets\LeapMotionShooter\Scripts\ConstantMovement.cs" />
      <Compile Include="Assets\LeapMotionShooter\Scripts\Movement.cs" />
      <Compile Include="Assets\LeapMotionShooter\Scripts\PlayerShoot.cs" />
