@@ -2,13 +2,12 @@
 using System.Collections;
 
 public class PlayerCollision : MonoBehaviour {
-
-	[SerializeField]
+	
 	private PlayerHealth playerHealth;
 
 	// Use this for initialization
 	void Start () {
-
+		playerHealth = this.gameObject.GetComponent<PlayerHealth> ();
 	}
 	
 	// Update is called once per frame
