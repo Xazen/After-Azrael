@@ -33,3 +33,6 @@ LeapMotionProject/LeapMotionProject-csharp.sln
 *.csproj
 *.sln
 *.userprefs
+*.userprefs
+
+LeapMotionProject/LeapMotionProject.userprefs

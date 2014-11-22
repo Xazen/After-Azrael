@@ -6,6 +6,7 @@ public class BulletMovement : MonoBehaviour {
 	private Transform _transform;
 
 	private Vector3 movementDirection;
+	private Vector3 baseSpeed;
 	private float movementSpeed = 20f;
 
 	// Use this for initialization
@@ -15,11 +16,12 @@ public class BulletMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this._transform.localPosition += movementDirection * movementSpeed * Time.deltaTime;
+		this._transform.localPosition += (movementDirection * movementSpeed + this.baseSpeed) * Time.deltaTime;
 	}
 
 
-	private void Fire(Vector3 direction) {
+	public void Fire(Vector3 direction, Vector3 baseSpeed) {
 		this.movementDirection = direction.normalized;
+		this.baseSpeed = baseSpeed;
 	}
 }
