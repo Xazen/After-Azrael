@@ -15,9 +15,9 @@ public class AstroidCollision : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter()
+	void OnCollisionEnter(Collision col)
 	{
 		playerCollision.CollideWithAstroid ();
-		Destroy(this);
+		Object.Destroy(this.gameObject);
 	}
 }
