@@ -442,9 +442,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   separateLeftRight: 0
   leftGraphicsModel: {fileID: 0}
-  leftPhysicsModel: {fileID: 11400010, guid: 95a8b1228f1034c8f9070761f4f13b21, type: 2}
+  leftPhysicsModel: {fileID: 0}
   rightGraphicsModel: {fileID: 0}
-  rightPhysicsModel: {fileID: 11400010, guid: 95a8b1228f1034c8f9070761f4f13b21, type: 2}
+  rightPhysicsModel: {fileID: 0}
   toolModel: {fileID: 0}
   isHeadMounted: 0
   mirrorZAxis: 0
