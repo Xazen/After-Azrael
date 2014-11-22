@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerShoot : MonoBehaviour {
 
+	private bool isShooting;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -11,12 +13,17 @@ public class PlayerShoot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetButtonDown("Fire")) {
-			this.Shoot();
+			this.StartShooting();
 		}
 	}
 
 
-	public void Shoot() {
+	public void StartShooting() {
 		Debug.Log("Shoting not implemented!");
+		this.isShooting = true;
+	}
+
+	public void StopShooting() {
+		this.isShooting = false;
 	}
 }
