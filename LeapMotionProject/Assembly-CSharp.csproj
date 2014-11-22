@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AstroidCollision.cs" />
      <Compile Include="Assets\LeapMotion\DemoResources\Scripts\AerodynamicLeaf.cs" />
      <Compile Include="Assets\LeapMotion\DemoResources\Scripts\ChangeMaterialOnGrab.cs" />
      <Compile Include="Assets\LeapMotion\DemoResources\Scripts\CubeWave.cs" />
@@ -105,8 +104,13 @@
      <Compile Include="Assets\LeapMotion\Scripts\Utils\TriggerDrawing.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\Utils\Utils.cs" />
      <Compile Include="Assets\LeapMotionShooter\Scripts\Asteroid.cs" />
+     <Compile Include="Assets\LeapMotionShooter\Scripts\AstroidCollision.cs" />
+     <Compile Include="Assets\LeapMotionShooter\Scripts\Bounds.cs" />
      <Compile Include="Assets\LeapMotionShooter\Scripts\BulletMovement.cs" />
+     <Compile Include="Assets\LeapMotionShooter\Scripts\DestroyOnBoundsIntersection.cs" />
      <Compile Include="Assets\LeapMotionShooter\Scripts\Movement.cs" />
+     <Compile Include="Assets\LeapMotionShooter\Scripts\PlayerCollision.cs" />
+     <Compile Include="Assets\LeapMotionShooter\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\LeapMotionShooter\Scripts\PlayerShoot.cs" />
      <Compile Include="Assets\LeapMotionShooter\Scripts\SpawnManager.cs" />
      <Compile Include="Assets\LeapMotionShooter\Scripts\constantMovement.cs" />
