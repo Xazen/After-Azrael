@@ -6,7 +6,7 @@ public class ConstantMovement : MonoBehaviour {
 	[SerializeField]
 	private float movementSpeed = 5;
 	[SerializeField]
-	private float spawnDistance = 100;
+	private float spawnDistance = 10;
 	[SerializeField]
 	private SpawnManager spawnManager;
 

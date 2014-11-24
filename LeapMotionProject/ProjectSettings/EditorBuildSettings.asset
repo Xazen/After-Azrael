@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/LeapMotionShooter/Scenes/MainMenu.unity
   - enabled: 1
     path: Assets/LeapMotionShooter/Scenes/GameScene.unity
+  - enabled: 1
+    path: Assets/LeapMotionShooter/Scenes/IntroScene.unity
