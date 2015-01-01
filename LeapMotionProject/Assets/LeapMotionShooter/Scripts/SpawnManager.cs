@@ -4,23 +4,23 @@ using System.Collections;
 public class SpawnManager : MonoBehaviour {
 
 	[SerializeField]
-	private GameObject astroid;
+	GameObject astroid;
 	[SerializeField]
-	private float astroidSpawnDistance = 50;
+	GameObject sun;
 	[SerializeField]
-	private float spawnRangeX = -25;
+	GameObject mercury;
 	[SerializeField]
-	private float spawnRangeY = 25;
+	GameObject venus;
+	[SerializeField]
+	GameObject earth;
+	[SerializeField]
+	float astroidSpawnDistance = 50;
+	[SerializeField]
+	float spawnRangeX = -25;
+	[SerializeField]
+	float spawnRangeY = 25;
+	
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 	public void spawnAstroid(Vector3 playerPosition)
 	{
